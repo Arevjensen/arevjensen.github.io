@@ -46,7 +46,7 @@ ved å følge denne formelen kommer vi frem til at
 677880 - ugylding
 
 
-summen av de gyldige tallene (inkludert sjekk nummer) for de gyldige tallene er  
+summen av de gyldige tallene (inkludert sjekk nummer) er
 **2412912**
 
 "Ekte" data ligger i [Dataset](./output.txt) 
