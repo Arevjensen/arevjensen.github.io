@@ -1,16 +1,19 @@
 # Kluss i systemet
 
 Noen har prøvd a rote til regnskapet til tussene.  
-Heldigvis har systemet et innebygget sjekk nummer for å se om hvert tall er gyldig.
+Heldigvis har systemet en innebygget sjekk, et kontrollsiffer, for å se hvilke tall som er gyldig.
 
 
-Hvordan sjekke om tallet er ekte:
+Prosedyre for å sjekke om tallet er gyldig:
 
-Fra høyre i tallet ta ett ig ett suffer (eksludert første som er sjekk tallet) og gang sifferet med 2 annenhver gang.  
-Hvis et av tallene blir høyere en 10 så pluss sammen tier plassen og ener plassen.  
-Summere disse tallene.
-Resulterende tall skal så modulus 10 for å finne rest  
-Sjekk siffer skal være 10 - tallet som er funnet
+Start med sifferet helt til høyre i tallet.  
+Dette er kontrollsifferet som foreløpig ignoreres og brukes helt til slutt.  
+Arbeid deretter mot venstre, siffer for siffer.  
+Man sjekker annehvert siffer (f.o.m. tallet til venstre for kontrollsifferet) på følgende måte:  
+Gang tallet med 2. Dersom resultatet over 10 legges sifrene i dette tallet sammen, og hvis ikke beholdes resultatet.  
+Tall som ikke sjekkes beholdes som de er.  
+Alle disse resultatene legges sammen, og man tar så dette resultatet modulus 10.  
+Man sitter så igjen med ett enkelt tall mellom 0 og 10, og dersom 10 minus dette tallet er det samme som kontrollsifferet, er det opprinnelige tallet gyldig.
  
 Eksempel nummer:   
 746776  
@@ -22,20 +25,18 @@ Eksempel nummer:
 Gjennomgang av 746776
 | | 7 | 4 | 6 | 7 | 7 | 6 |
 |--- | :---: | :---:  | :---:   | :---:   | :---:   | :---:   |
-| multiplikator  | 2 | 1 | 2 | 1 | 2 | - |
+| ganges med  | 2 | 1 | 2 | 1 | 2 | - |
 | resultat  | 14 | 4 | 12 | 7 | 14 | - |
-| reduser tall over 10 | 1 + 4 | 4 | 1 + 2 | 7 | 1 + 4 | - |
-| produkt  | 5 | 4 | 3 | 7 | 5 | - |
+| resultat over 10 | 1 + 4 | 4 | 1 + 2 | 7 | 1 + 4 | - |
+| endelig resultat  | 5 | 4 | 3 | 7 | 5 | - |
 
-sum av produkter: 5+4+3+7+5 = 24  
-rest etter modulus: 24 % 10 = 4  
-trekk resultat fra 10: 10 - 4 = 6  
+Sum av endelige resultat: 5+4+3+7+5 = 24  
+Rest modulo 10: 24 % 10 = 4  
+10 minus rest: 10 - 4 = 6  
 
-funnet sjekk nummer er 6
+Prosedyren fører til det samme som kontrollsifferet, og tallet er derfor gyldig.
 
-Nummeret passer med oppgitt nummer så dette taller er gyldig
-
-ved å følge denne formelen kommer vi frem til at 
+Ved å følge denne formelen kommer vi frem til at 
 
 560631 - gyldig
 
@@ -46,7 +47,7 @@ ved å følge denne formelen kommer vi frem til at
 677880 - ugylding
 
 
-summen av de gyldige tallene (inkludert sjekk nummer) er
+Summen av de ovennevnte gyldige tallene (der man inkluderer sjekksifferet) er
 **2412912**
 
 "Ekte" data ligger i [Dataset](./output.txt) 
