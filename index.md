@@ -28,8 +28,8 @@ Gjennomgang av 746776
 | produkt  | 5 | 4 | 3 | 7 | 5 | - |
 
 sum av produkter: 5+4+3+7+5 = 24  
-rest etter modulus 24 % 10 = 4  
-endelig sjekk nummer 10 - 4 = 6  
+rest etter modulus: 24 % 10 = 4  
+trekk resultat fra 10: 10 - 4 = 6  
 
 funnet sjekk nummer er 6
 
