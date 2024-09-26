@@ -1,15 +1,15 @@
 # Kluss i systemet
 
 Noen har prøvd a rote til regnskapet til tussene.  
-Heldigvis har systemet et innebygget sjekk nummer for å se om tallet er gyldig.
+Heldigvis har systemet et innebygget sjekk nummer for å se om hvert tall er gyldig.
 
 
-Måten man går frem på er:
+Hvordan sjekke om tallet er ekte:
 
-Fra høyre i tallet (eksludert første som er sjekk tallet) gang taller med 2 annenhver gang.  
+Fra høyre i tallet ta ett ig ett suffer (eksludert første som er sjekk tallet) og gang sifferet med 2 annenhver gang.  
 Hvis et av tallene blir høyere en 10 så pluss sammen tier plassen og ener plassen.  
-Når alle produktene er regnet ut pluss dem sammen  
-Gjenværende tall skal så modulus 10 for å finne rest  
+Summere disse tallene.
+Resulterende tall skal så modulus 10 for å finne rest  
 Sjekk siffer skal være 10 - tallet som er funnet
  
 Eksempel nummer:   
@@ -24,7 +24,7 @@ Gjennomgang av 746776
 |--- | :---: | :---:  | :---:   | :---:   | :---:   | :---:   |
 | multiplikator  | 2 | 1 | 2 | 1 | 2 | - |
 | resultat  | 14 | 4 | 12 | 7 | 14 | - |
-| reduser | 1 + 4 | 4 | 1 + 2 | 7 | 1 + 4 | - |
+| reduser tall over 10 | 1 + 4 | 4 | 1 + 2 | 7 | 1 + 4 | - |
 | produkt  | 5 | 4 | 3 | 7 | 5 | - |
 
 sum av produkter: 5+4+3+7+5 = 24  
