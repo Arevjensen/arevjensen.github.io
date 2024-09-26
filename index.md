@@ -49,7 +49,7 @@ ved å følge denne formelen kommer vi frem til at
 summen av de gyldige tallene (inkludert sjekk nummer) for de gyldige tallene er  
 **2412912**
 
-Data ligger i [Tall](./ouput.txt) 
+Data ligger i [Tall](./output.txt) 
 
 <details>
 <summary>Fasit</summary>
