@@ -1,24 +1,8 @@
-# Site settings
-title: "Oppgave test"
-description: "Programmerings oppdaver"
-url: "https://arevjensen.github.io"
-baseurl: "" # Leave this empty unless your site is in a subdirectory
-
-# Build settings
-markdown: kramdown
-theme: minima
-
-# Exclude these files from the build process
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - README.md
-
-# Plugins
 plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-
-# Other settings
-highlighter: rouge
-
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+include:
+  - output.txt
+  - index.md
