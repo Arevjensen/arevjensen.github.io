@@ -53,7 +53,7 @@ Summen av de ovennevnte gyldige tallene (der man inkluderer sjekksifferet) er
 **2412912**
 
 ## Oppgave
-Kan du finne summen av lefsetabellen etter å ha fjernet de ugyldige tallene som har blitt lagt inn?  
+Kan du finne summen tallene av lefsetabellen etter å ha fjernet de ugyldige tallene som har blitt lagt inn?  
 
 
 [Utrekk av lefsetabellen fra tusseladder-databasen](./input.txt) 
