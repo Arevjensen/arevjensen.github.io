@@ -1,9 +1,9 @@
 # Kluss i systemet
 
 Noen har prøvd å rote til regnskapet til tussene.  
-En sleip vette har lagt inn falske tall i lefse tabellen som ligger i tusseladder databasen.
+En sleip vette har lagt inn falske tall i lefse tabellen som ligger i tusseladder databasen.  
 Heldigvis har de smarte tussene forberedt seg på knep.   
-Tallene i tabellen har en innebygget sjekk, et kontrollsiffer, for å se om et tall er gyldig.
+Tallene i tabellen har nemlig en innebygget sjekk, et kontrollsiffer, for å se om et tall er gyldig.
 
 
 Prosedyre for å sjekke om tallet er gyldig:
@@ -52,8 +52,9 @@ Ved å følge denne formelen kommer vi frem til at
 Summen av de ovennevnte gyldige tallene (der man inkluderer sjekksifferet) er
 **2412912**
 
-
-Kan du finne summen av de gyldige tallene som ligger i tussenes database?
+## Oppgave
+Kan du finne summen av lefse tabellen etter å ha fjernet de ugyldige tallen som  
+har blitt lagt inn?  
 [Utrekk av lefse tabellen fra tusseladder-databasen](./input.txt) 
 
 <details>
